@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/tabhost"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="#080A0A" />
+    <RadioGroup 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+        <RadioButton 
+            android:id="@+id/rb_msg"
+            android:drawableTop="@drawable/tab_message_selector"
+            android:text="消息"
+            style="@style/main_tab_bottom"
+            />
+        <RadioButton 
+            android:id="@+id/rb_contact"
+            android:drawableTop="@drawable/tab_contacts_selector"
+            android:text="联系人"
+            style="@style/main_tab_bottom"
+            />
+        <RadioButton 
+            android:id="@+id/rb_dynamic"
+            android:drawableTop="@drawable/tab_dynamic_selector"
+            android:text="动态"
+            style="@style/main_tab_bottom"
+            />
+        
+    </RadioGroup>
+    
+
+</RelativeLayout>
